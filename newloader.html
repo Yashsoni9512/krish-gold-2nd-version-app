@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url=index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KIRSH GOLD</title>
+    <link rel="stylesheet" href="newloader.css" />
+    <!-- <script>
+        var seconds=0;
+        function displayseconds(){
+            seconds +=1;
+            document.getElementById("secondsdisplay").innerText="";
+        }
+        setInterval(displayseconds,1000);
+
+        function redirectpage(){
+            window.location="index.html"
+        }
+        setTimeout('redirectpage',1000);
+    </script>
+</head> -->
+     <script>
+        // Redirect to index.html after 5 seconds
+        setTimeout(function() {
+            window.location.href = "index.html?refresh=true";
+        }, 4800);
+    </script>
+<body> 
+    <div class="secondsdisplay">
+    <svg width="100" height="100">
+        <g>
+            <path d="M 50,100 A 1,1 0 0 1 50,0"/>   
+        </g>
+        <g>
+            <path d="M 50,75 A 1,1 0 0 0 50,-25"/>
+        </g>
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#DE4256;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+</div>
+</body>
+</html>
